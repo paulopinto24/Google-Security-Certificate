@@ -147,3 +147,50 @@ O modelo OSI (Open Systems Interconnection) é uma referência teórica com sete
 | Transporte         | TCP, UDP                                |
 | Internet           | IP, ICMP                                |
 | Acesso à Rede      | Ethernet, ARP                           |
+
+---
+
+## Endereços IP e Endereços MAC
+
+### Endereços IP
+
+Existem dois tipos principais de endereços IP:
+
+- **IPv4 (Internet Protocol version 4)**  
+  - Composto por quatro números (1 a 3 dígitos), separados por pontos.  
+    Exemplo: `192.168.0.1`
+  - Devido à crescente utilização da Internet, o número de endereços IPv4 disponíveis tornou-se limitado.
+
+- **IPv6 (Internet Protocol version 6)**  
+  - Composto por 32 caracteres hexadecimais, separados por dois-pontos.  
+    Exemplo: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`
+  - Suporta uma quantidade muito maior de endereços, ideal para a expansão da Internet.
+
+### Endereços IP Públicos vs. Privados
+
+- **Endereço IP Público**  
+  - Atribuído pelo fornecedor de acesso à Internet (ISP).
+  - Visível na Internet e associado à localização geográfica da rede.
+  - Todos os dispositivos de uma rede doméstica ou empresarial partilham o mesmo IP público.
+
+- **Endereço IP Privado**  
+  - Usado apenas dentro de redes locais (LAN).
+  - Não é acessível diretamente a partir da Internet.
+  - Permite que os dispositivos comuniquem entre si de forma interna.
+
+---
+
+### Endereço MAC
+
+O **endereço MAC** (Media Access Control) é um identificador único atribuído a cada interface de rede de um dispositivo. Trata-se de um endereço físico e fixo, usado a nível da camada de enlace de dados.
+
+- Composto por um conjunto de caracteres alfanuméricos.
+- Usado para identificar dispositivos numa mesma rede local.
+- Exemplo: `00:1A:2B:3C:4D:5E`
+
+#### Tabela de Endereços MAC
+
+- Os **switches** usam tabelas de endereços MAC para encaminhar pacotes aos dispositivos correctos.
+- Quando um switch recebe um pacote, lê o endereço MAC de destino e associa-o à porta correta.
+- Esta associação é mantida numa **tabela de endereços MAC**, semelhante a uma lista de contactos internos.
+
