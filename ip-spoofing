@@ -1,0 +1,41 @@
+# IP Spoofing
+
+O IP spoofing consiste na falsificação do endereço IP de origem de um pacote para se fazer passar por um sistema autorizado.
+
+## Ataques Relacionados ao IP Spoofing
+
+### Ataque no Caminho (On-Path ou Man-in-the-Middle)
+- O atacante intercepta a comunicação entre dois dispositivos confiáveis.
+- Pode capturar credenciais, modificar dados ou redirecionar requisições.
+- Um exemplo é o spoofing de respostas DNS, redirecionando domínios para servidores maliciosos.
+
+### Ataque de Repetição (Replay)
+- Pacotes legítimos são capturados e reenviados posteriormente.
+- O atacante tenta reproduzir uma ação anterior fingindo ser o utilizador autorizado.
+
+### Ataque Smurf
+- Combinação de IP spoofing com negação de serviço (DoS).
+- Utiliza pacotes ICMP (ping) enviados a endereços de difusão (broadcast).
+- Os dispositivos da rede respondem em massa, sobrecarregando o alvo com respostas de eco ICMP.
+
+### Ataque DoS
+- Visa impedir o funcionamento normal de um sistema.
+- Envia grandes quantidades de tráfego com IPs falsificados.
+- Difere do spoofing tradicional pois os pacotes parecem legítimos em todos os campos, dificultando a filtragem.
+
+---
+
+## Medidas de Prevenção
+
+- Criptografia: uso de TLS, HTTPS e VPNs para proteger dados em trânsito.
+- Firewalls:
+  - Rejeitar pacotes com IP de origem da própria rede vindos da internet.
+  - NGFWs (Next-Generation Firewalls) conseguem:
+    - Detetar tráfego anómalo
+    - Prevenir ataques Smurf e DoS
+    - Monitorizar protocolos como ICMP
+- Evitar Wi-Fi público sem VPN ativa.
+- Defesa em Profundidade:
+  - Nenhuma medida isolada é suficiente.
+  - A combinação de firewalls, criptografia, segmentação e monitorização contínua é fundamental para proteção efetiva.
+
