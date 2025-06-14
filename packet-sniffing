@@ -1,0 +1,63 @@
+# Packet Sniffing
+
+## O que são pacotes de dados?
+
+- Cada pacote contém:
+  - **Cabeçalho (Header):** inclui os endereços IP do remetente e do destinatário.
+  - **Corpo (Body):** pode conter informações valiosas como nomes, datas de nascimento, mensagens pessoais, dados financeiros e números de cartão de crédito.
+
+---
+
+## O que é Packet Sniffing?
+
+**Packet sniffing** é a prática de utilizar ferramentas de software (ou dispositivos de hardware) para observar e analisar os dados que circulam numa rede.
+
+- Pode ser usado por analistas de segurança para:
+  - Investigar incidentes em curso.
+  - Resolver problemas de rede.
+- Também pode ser explorado por **atacantes mal-intencionados** para espiar ou alterar comunicações privadas.
+
+---
+
+## Tipos de Packet Sniffing
+
+### 1. Passive Packet Sniffing
+
+- O atacante **lê os pacotes de dados em trânsito** sem os modificar.
+- Explorando a visibilidade dos dados em redes não protegidas (ex: redes com hubs).
+- Analogia: um carteiro malicioso que lê cartas sem permissão enquanto as entrega.
+
+### 2. Active Packet Sniffing
+
+- O atacante **interfere ativamente nos pacotes**, podendo:
+  - Redirecionar os pacotes para outra porta.
+  - Alterar o conteúdo da mensagem (ex: número de conta bancária).
+- Analogia: um vizinho que se oferece para entregar uma carta e a lê ou altera antes de colocá-la na caixa de correio.
+
+---
+
+## Ferramentas Usadas
+
+- **Software de sniffing**: aplicações que monitorizam e analisam pacotes.
+- **Dispositivos de hardware**: utilizados para capturar e manipular pacotes em ambientes mais complexos.
+
+---
+
+## Como Prevenir Packet Sniffing Malicioso
+
+### 1. Utilização de VPN
+
+- Cria um **túnel encriptado** entre o dispositivo e o servidor.
+- Mesmo que os dados sejam capturados, permanecem ilegíveis sem a chave de encriptação.
+
+### 2. Acesso a websites com HTTPS
+
+- O HTTPS utiliza **SSL/TLS** para encriptar dados transmitidos entre o navegador e o servidor web.
+- Impede escutas e alterações durante a comunicação.
+
+### 3. Evitar redes Wi-Fi públicas e não seguras
+
+- Redes públicas (cafés, aeroportos, etc.) muitas vezes **não têm encriptação**.
+- Permitem que qualquer utilizador na rede intercepte tráfego de outros dispositivos.
+- Se for necessário usar estas redes, **usar uma VPN** é essencial.
+
